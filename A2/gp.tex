@@ -55,7 +55,7 @@
 
 \noindent \textbf{17} \quad 
 If a, b, c, d are in G.P, prove that 
-$ (a^{n} + b^{n}),(b^{n} + c^{n}),(c^{n} + d^{n}) $ are in G.P.\\
+$ (a^{n} + b^{n}),(b^{n} + c^{n}),(c^{n} + d^{n}) $ are in G.P and find the Z transform of General term of G.P.\\
 \solution
 
 \begin{align}   
@@ -65,15 +65,25 @@ c &= ar^{2}\\
 d &= ar^{3}
 \end{align}
 
-\bigskip
-\begin{align} \frac{(b^n + c^n)}{(a^n + b^n)} &= \frac{(c^n + d^n)}{(b^n + c^n)} \end{align}
+\begin{align} \implies \frac{(b^n + c^n)}{(a^n + b^n)} &= \frac{(c^n + d^n)}{(b^n + c^n)} \end{align}
 
-\begin{align} \frac{(ar^1)^n + (ar^2)^n}{(ar^0)^n + (ar^1)^n}  &= \frac{(ar^2)^n + (ar^3)^n}{(ar^1)^n + (ar^2)^n} \end{align}
+\begin{align} \implies \frac{(ar^1)^n + (ar^2)^n}{(ar^0)^n + (ar^1)^n}  &= \frac{(ar^2)^n + (ar^3)^n}{(ar^1)^n + (ar^2)^n} \end{align}
 
-\begin{align} \frac{a^n r^n(1 + r^n)}{a^n(1 + r^n)} &= \frac{a^n r^{2n}(1 + r^n)}{a^n r^n (1 + r^n)} \end{align}
+\begin{align} \implies \frac{a^n r^n(1 + r^n)}{a^n(1 + r^n)} &= \frac{a^n r^{2n}(1 + r^n)}{a^n r^n (1 + r^n)} \end{align}
 
-\begin{align} r^n = r^n \end{align}
-\bigskip
+\begin{align} \implies r^n &= r^n \end{align}
 Hence proved they are in in G.P
+\begin{align}
+    x(n) &= x(0)r^{n} u(n)\\
+    X(z) &= \sum_{n=-\infty}^{\infty} {x(n) z^{-n}}\\
+    &= \sum_{n=0}^{\infty} {ar^{n} z^{-n}}\\
+    &= \sum_{n=0}^{\infty} {a (rz^{-1})^{n}}\\
+    &= \frac{a}{1-rz^{-1}}, \quad |z|>|r|
+\end{align}
+
+
+
+
+
 \end{document}
 
