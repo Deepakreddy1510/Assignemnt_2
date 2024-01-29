@@ -1,25 +1,18 @@
 import numpy as np
 import matplotlib.pyplot as plt
 
-# Define the sequence parameters
-a = 0.25
-r = 2
+# Load data from the file
+data = np.loadtxt("sequence_data.txt")
 
-# Generate values for n
-n_values = np.arange(0, 10)
+# Extract x and y values
+x = data[:, 0]
+y = data[:, 1]
 
-# Calculate x(n) values
-x_values = a * np.power(r, n_values)
-
-# Create a stem plot
-plt.stem(n_values, x_values, linefmt='b-', markerfmt='bo', basefmt='r-')
-
-# Set labels and title
+# Plot the stem graph
+plt.stem(x, y, basefmt='k-', linefmt='r-', markerfmt='ro')
 plt.xlabel('n')
 plt.ylabel('x(n)')
-plt.title(r'Stem Plot of $x(n) =(0.25)2^n$')
-
-# Display the plot
+plt.title('Stem Plot of $x(n) = (0.25) 2^n$')
+plt.grid(True)
 plt.show()
-
 
