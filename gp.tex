@@ -27,6 +27,8 @@
 \usepackage{hhline}                                           
 \usepackage{ifthen}                                           
 \usepackage{lscape}
+\usepackage{adjustbox}
+\usepackage{tabularx}
 
 \newtheorem{theorem}{Theorem}[section]
 \newtheorem{problem}{Problem}
@@ -64,7 +66,6 @@ $ \brak{a^{n} + b^{n}},\brak{b^{n} + c^{n}},\brak{c^{n} + d^{n}} $ are in G.P \\
     \end{table}
 \end{center}
 
-
 \begin{align}   
 r=\frac{b}{a} = \frac{c}{b}= \frac{d}{c} \label{eq:eq.11.9.5.17.1}
 \end{align}
@@ -74,8 +75,12 @@ From eq\eqref{eq:eq.11.9.5.17.1}
 \begin{align}
 \frac{b^n + c^n}{a^n + b^n}
 &= \frac{\brak{ar}^n + \brak{ar^2}^n}{\brak{a}^n + \brak{ar}^n}\\
+&= \frac{a^n r^n \brak{1+ r^n}}{a^n \brak{1 + r^n}}\\
+&= r^n \\
 \frac{c^n + d^n}{b^n + c^n}&= \frac{\brak{ar^2}^n + \brak{ar^3}^n}{\brak{ar}^n + \brak{ar^2}^n}\\
+&= \frac{a^n r^{2n} \brak{1 + r^n}}{a^n r^n \brak{1 + r^n}}\\
 %&= \frac{r^n \brak{\brak{ar}^n + \brak{ar^2}^n}}{r^n \brak{\brak{a}^n + \brak{ar}^n}}
+&= r^n \\
 \frac{b^n + c^n}{a^n + b^n} &= \frac{c^n + d^n}{b^n + c^n}
 \end{align}
 Hence proved they are in in G.P\\
@@ -86,19 +91,20 @@ Hence proved they are in in G.P\\
 \end{align}
 
 \begin{align}   
-r'=\frac{b^n + c^n}{a^n + b^n} = \frac{c^n + d^n}{b^n + c^n} \label{eq:eq.11.9.5.17.2}
+r_1=\frac{b^n + c^n}{a^n + b^n} = \frac{c^n + d^n}{b^n + c^n} \label{eq:eq.11.9.5.17.2}
 \end{align}
 
 From eq\eqref{eq:eq.11.9.5.17.2}
 
 \begin{align}
-    y\brak{n} &= a^n + b^n \brak{\frac{b^n + c^n}{a^n + b^n}}^{n} u\brak{n}\\
-    Y\brak{z} &= \frac{a^n + b^n}{1-\frac{b^n + c^n}{a^n + b^n} z^{-1}}, \quad \abs{z}>\abs{\frac{b^n + c^n}{a^n + b^n}}
+    y\brak{n} &= \brak{a^n + b^n} \brak{\frac{b^n + c^n}{a^n + b^n}}^{n} u\brak{n}\\
+    Y\brak{z} &= \frac{a^n + b^n}{1-\brak{\frac{b^n + c^n}{a^n + b^n}} z^{-1}}, \quad \abs{z}>\abs{\frac{b^n + c^n}{a^n + b^n}}
 \end{align}
 
-\begin{figure}[htbp]
+
+\begin{figure}[ht]
    \centering
-   \includegraphics[width=1\columnwidth]{figs/gp.png}
+   \includegraphics[width=0.9\columnwidth]{figs/gp.png}
 \end{figure}
 
 
