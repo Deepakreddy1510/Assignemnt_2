@@ -15,24 +15,20 @@ data2 = np.loadtxt("coordinate2.txt")
 x2 = np.arange(0, 5)
 y2 = data2
 
-# Create subplots
-plt.subplot(2, 1, 1)
+# Plot the first subplot
+plt.figure(1)
 plt.stem(x1, y1, basefmt='k-', linefmt='r-', markerfmt='ro')
 plt.xlabel('n')
 plt.ylabel('x(n)')
-plt.title('Stem Plot of $x(n) = (0.25) 2^n$, $a= 0.25, r=2$')
 plt.grid(True)
 
-plt.subplot(2, 1, 2)
+# Plot the second subplot
+plt.figure(2)
 plt.stem(x2, y2, linefmt='r-', markerfmt='ro', basefmt='r-')
 plt.xlabel('n')
 plt.ylabel('x(n)')
-plt.title(r'Stem Plot of $x(n) = 0.25^n + 0.5^n$, $a=0.25, b=0.5$')
 plt.grid(True)
 
-# Adjust layout for better appearance
-plt.tight_layout()
-
-# Display the combined plot
+# Display the plots
 plt.show()
 

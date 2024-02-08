@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex 2024.1.12)  7 FEB 2024 23:08
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex 2024.1.12)  9 FEB 2024 00:17
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1333,23 +1333,27 @@ Underfull \hbox (badness 10000) in paragraph at lines 85--87
 
  []
 
-<figs/gp.png, id=9, 370.0224pt x 598.3956pt>
-File: figs/gp.png Graphic file (type png)
-<use figs/gp.png>
-Package pdftex.def Info: figs/gp.png  used on input line 107.
-(pdftex.def)             Requested size: 226.79846pt x 366.77388pt.
+<figs/gp1.png, id=9, 462.528pt x 320.1561pt>
+File: figs/gp1.png Graphic file (type png)
+<use figs/gp1.png>
+Package pdftex.def Info: figs/gp1.png  used on input line 107.
+(pdftex.def)             Requested size: 201.60077pt x 139.54523pt.
+File: figs/gp1.png Graphic file (type png)
+<use figs/gp1.png>
+Package pdftex.def Info: figs/gp1.png  used on input line 113.
+(pdftex.def)             Requested size: 201.60077pt x 139.54523pt.
 [1{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}
 
 
- <./figs/gp.png>]
+ <./figs/gp1.png>]
 (./gp.aux)
 Package rerunfilecheck Info: File `gp.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
  ) 
 Here is how much of TeX's memory you used:
- 30716 strings out of 478287
- 603633 string characters out of 5849289
- 875946 words of memory out of 5000000
+ 30719 strings out of 478287
+ 603658 string characters out of 5849289
+ 877944 words of memory out of 5000000
  48220 multiletter control sequences out of 15000+600000
  537734 words of font info for 169 fonts, out of 8000000 for 9000
  1144 hyphenation exceptions out of 8191
@@ -1362,10 +1366,10 @@ fonts/txex.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/txfonts/txsy.p
 fb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/share/
 texlive/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/share/texlive/texmf-d
 ist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on gp.pdf (1 page, 74040 bytes).
+Output written on gp.pdf (1 page, 59797 bytes).
 PDF statistics:
- 79 PDF objects out of 1000 (max. 8388607)
- 57 compressed objects within 1 object stream
- 16 named destinations out of 1000 (max. 500000)
+ 81 PDF objects out of 1000 (max. 8388607)
+ 59 compressed objects within 1 object stream
+ 18 named destinations out of 1000 (max. 500000)
  18 words of extra memory for PDF output out of 10000 (max. 10000000)
 
